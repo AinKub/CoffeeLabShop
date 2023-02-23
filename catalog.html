@@ -11,6 +11,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/catalog.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/modal.css">
 
@@ -82,23 +83,34 @@
                 <div class="filters_space">
                     
                     <div class="filter">
+
                         <p class="filter_title">Сортировать</p>
-                        <select name="catalog_sort" id="sort_select">
-                            <option selected value="rating">Рейтинг</option>
-                            <option value="price">Цена</option>
+                        <select class="filter_select" name="catalog_sort" id="sort_select">
+
+                            <optgroup>
+                                <option selected value="rating">Рейтинг</option>
+                                <option value="price">Цена</option>
+                            </optgroup>
+                            
                         </select>
+
                     </div>
 
                     <div class="filter">
+
                         <p class="filter_title">Фильтр</p>
-                        <select name="catalog_sort" id="sort_select">
-                            <option value="price">Цена</option>
-                            <option value="mixture">Смесь</option>
-                            <option selected value="in_beans">В зернах</option>
-                            <option value="bitterness">Горчинка</option>
-                            <option value="density">Плотность</option>
-                            <option value="acidity">Кислотность</option>
-                            <option value="sweetness">Сладость</option>
+                        <select class="filter_select" name="catalog_filter" id="filter_select">
+
+                            <optgroup>
+                                <option value="price">Цена</option>
+                                <option value="mixture">Смесь</option>
+                                <option selected value="in_beans">В зернах</option>
+                                <option value="bitterness">Горчинка</option>
+                                <option value="density">Плотность</option>
+                                <option value="acidity">Кислотность</option>
+                                <option value="sweetness">Сладость</option>
+                            </optgroup>
+                        
                         </select>
 
                     </div>
@@ -108,7 +120,19 @@
                 <div class="catalog_space">
                     
 
-                    <!-- Вот тут -->
+                    
+                    <div class="cards_space">
+
+
+                        <!-- Вот тут обитают карточки -->
+                    
+
+                    </div>
+
+
+
+
+                    <div class="page_selection"></div>
 
                 </div>
 
@@ -116,23 +140,6 @@
 
         </div>
 
-        <div class="page_selection">
-
-            <p id="start">
-                <a href="#">В начало</a>
-            </p>
-            <p id="back" class="invisible">
-                <a href="#">Назад</a>
-            </p>
-            <p id="1">
-                <a href="#">1</a>
-            </p>
-            <p>...</p>
-            <p id="3">
-                <a href="#">3</a>
-            </p>
-
-        </div>
 
     </main>
 
@@ -325,6 +332,7 @@
     <script defer src="js/reg.js"></script>
     <script defer src="js/load_product.js"></script>
     <script defer src="js/modal.js"></script>
+    <script defer src="js/catalog.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script>
 
 </html>
