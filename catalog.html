@@ -16,7 +16,6 @@
 
     <link rel="icon" href="img/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.min.css" rel="stylesheet">
-    
 </head>
 
 <body>
@@ -59,7 +58,83 @@
         </nav>
     </header>
 
+    <main class="container">
 
+        <p class="current_page">Главная/Каталог</p>
+        <p class="catalog_title">Кофе свежей обжарки</p>
+
+        <div class="common_catalog_space">
+
+            <div class="category_menu">
+
+                <p class="current_category_title">Зерновой кофе</p>
+                <div class="sidebar">
+                    <p class="sidebar_name">Категория</p>
+                    <a href="#" class="category_name">Моносорта</a>
+                    <a href="#" class="category_name">Эспрессо-смеси</a>
+                    <a href="#" class="category_name">Specialty</a>
+                </div>
+
+            </div>
+
+            <div class="catalog">
+
+                <div class="filters_space">
+                    
+                    <div class="filter">
+                        <p class="filter_title">Сортировать</p>
+                        <select name="catalog_sort" id="sort_select">
+                            <option selected value="rating">Рейтинг</option>
+                            <option value="price">Цена</option>
+                        </select>
+                    </div>
+
+                    <div class="filter">
+                        <p class="filter_title">Фильтр</p>
+                        <select name="catalog_sort" id="sort_select">
+                            <option value="price">Цена</option>
+                            <option value="mixture">Смесь</option>
+                            <option selected value="in_beans">В зернах</option>
+                            <option value="bitterness">Горчинка</option>
+                            <option value="density">Плотность</option>
+                            <option value="acidity">Кислотность</option>
+                            <option value="sweetness">Сладость</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="catalog_space">
+                    
+
+                    <!-- Вот тут -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="page_selection">
+
+            <p id="start">
+                <a href="#">В начало</a>
+            </p>
+            <p id="back" class="invisible">
+                <a href="#">Назад</a>
+            </p>
+            <p id="1">
+                <a href="#">1</a>
+            </p>
+            <p>...</p>
+            <p id="3">
+                <a href="#">3</a>
+            </p>
+
+        </div>
+
+    </main>
 
     <div class="wrap">
         <img src="img/footer/footer_coffee.png" class="coffee_img">
